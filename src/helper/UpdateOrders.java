@@ -8,7 +8,7 @@ public class UpdateOrders {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void changeOrderStatus(Order o, String status){
+	public static void changeOrderStatus(Order o, String status){
 		
 	}
 	
@@ -21,6 +21,14 @@ public class UpdateOrders {
 	}
 	
 	public void insertOrderToJustAddedOrders(Order o){
+		
+	}
+	
+	public static void changeOrderPathInfo(Order o, int pathId){
+		
+	}
+	
+	public static void changeOrderDriverInfo(Order o, int driverId){
 		
 	}
 	

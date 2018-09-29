@@ -107,6 +107,7 @@ public class main {
 //		});
 		
 		System.out.println("15");
+		// make getFinalOrdersToPath static, so it can be called without declaring new object
 		getOrders.getFinalOrdersToPath(10, priority, sections);
 		System.out.println("-16----16");
 //		Filling filling = new Filling();

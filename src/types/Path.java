@@ -1,6 +1,7 @@
 package types;
 
 import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Path {
@@ -17,9 +18,11 @@ public class Path {
 	private Date dateCreated;
 	private int section;
 	private String status;
+	private Timestamp dateTime;
 	
+
 	public Path(int id, int numOfOrders, Time timeCreated, Date dateCreated, int section) {
-		super();
+		//super();
 		this.id = id;
 		this.NumOfOrders = numOfOrders;
 		this.timeCreated = timeCreated;
@@ -27,6 +30,20 @@ public class Path {
 		this.section = section;
 	}
 
+	/**
+	 * @return the dateTime
+	 */
+	public Timestamp getDateTime() {
+		return dateTime;
+	}
+
+	/**
+	 * @param dateTime the dateTime to set
+	 */
+	public void setDateTime(Timestamp dateTime) {
+		this.dateTime = dateTime;
+	}
+	
 	/**
 	 * @return the id
 	 */
@@ -137,6 +154,15 @@ public class Path {
 	 */
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Path [id=" + id + ", driverId=" + driverId + ", NumOfOrders=" + NumOfOrders + ", cost=" + cost + ", timeCreated=" + timeCreated + ", dateCreated=" + dateCreated
+				+ ", section=" + section + ", status=" + status + "]";
 	}
 	
 	

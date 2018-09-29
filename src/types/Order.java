@@ -48,7 +48,8 @@ public class Order {
 	private int section;
 	private Time earliestTime;
 	private Time latestTime;
-	private Employee driverId;
+	//private Employee driverId1;
+	private int driverId;
 	private String status; // packing items, collectingFromStores, shipping ----> maybe use enum;
 	private String address;
 	
@@ -142,13 +143,13 @@ public class Order {
 	/**
 	 * @return the driverId
 	 */
-	public Employee getDriverId() {
+	public int getDriverId() {
 		return driverId;
 	}
 	/**
 	 * @param driverId the driverId to set
 	 */
-	public void setDriverId(Employee driverId) {
+	public void setDriverId(int driverId) {
 		this.driverId = driverId;
 	}
 	/**
